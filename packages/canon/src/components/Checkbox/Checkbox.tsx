@@ -26,6 +26,7 @@ export const Checkbox = React.forwardRef<HTMLButtonElement, CheckboxProps>(
     const {
       label,
       checked,
+      defaultChecked,
       onChange,
       disabled,
       required,
@@ -40,6 +41,7 @@ export const Checkbox = React.forwardRef<HTMLButtonElement, CheckboxProps>(
         ref={ref}
         className={clsx('canon-CheckboxRoot', className)}
         checked={checked}
+        defaultChecked={defaultChecked}
         onCheckedChange={onChange}
         disabled={disabled}
         required={required}
